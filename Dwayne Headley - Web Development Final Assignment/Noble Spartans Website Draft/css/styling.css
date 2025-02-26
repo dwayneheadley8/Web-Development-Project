@@ -1,0 +1,805 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* -------- NAVIGATION BAR -------- */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 10px 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+}
+
+.logo img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu li {
+    margin: 0 15px;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-menu a:hover,
+.nav-menu .active {
+    color: red;
+}
+
+
+/* -------- SLIDER STYLES -------- */
+/*.container2{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+*/
+/* Slider styles */
+.swiper{
+	width: 100%;
+	height: auto;
+}
+
+.swiper-slide img{
+	width: 100%;
+	height: auto;
+}
+
+/* About Section Styles */
+.about-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  color: #fff;
+  height: 100vh;
+  background-image: url('https://i.imgur.com/KzV75dJ.jpeg'); /* Replace with your background image */
+  background-size: cover; /* Ensures the image covers the entire section */
+  background-position: center;
+}
+
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.about-text {
+  flex: 1;
+  display: flex; /* Enable flexbox */
+  flex-direction: column; /* Arrange content vertically */
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  text-align: center; /* Center text */
+  /*margin: 20px; /* Adds space around the text */
+  margin-left: 150px; /* Adds space around the text */
+
+}
+
+.about-text h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.about-text h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.more-info-btn {
+  background-color: #e63946;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.more-info-btn:hover {
+  background-color: #d62828;
+}
+
+.more-info-btn a {
+  color: white;
+  text-decoration: none;
+}
+
+.about-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-image img {
+  max-width: 60%;
+  height: auto;
+}
+
+/*-------------FAQ Section-------------*/
+
+/* FAQ Section Layout */
+.faq-section {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  width: 100%;
+  align-items: center;
+}
+
+/* Left: Image Section */
+.faq-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.faq-image img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Right: Content Section */
+.faq-content {
+  flex: 1;
+  background-color: #ffc107; /* Yellow background */
+  padding: 40px;
+  color: #fff;
+  text-align: left;
+}
+
+.faq-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.faq-content p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.faq-link {
+  font-size: 1.1rem;
+  color: #000; /* Black link */
+  text-decoration: none;
+  border-bottom: 2px solid #000; /* Underline effect */
+  font-weight: bold;
+  transition: color 0.3s, border-color 0.3s;
+}
+
+.faq-link:hover {
+  color: #e63946; /* Red on hover */
+  border-color: #e63946; /* Red underline on hover */
+}
+
+/*Footer Section*/
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 50px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-section {
+	margin-right: 80px;
+    text-align: center;
+}
+
+.footer-section h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.footer-section p {
+    margin-bottom: 10px;
+	text-decoration: none;
+	color: #e63946;
+}
+
+.footer-section a {
+    margin-bottom: 10px;
+	text-decoration: none;
+
+}
+
+.copyright {
+    text-align: center;
+    padding: 20px;
+}
+
+/*================ABOUT PAGE================*/
+.about-hero-container {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+}
+
+.about-hero-content {
+	padding: 230px;
+	text-align: center;
+}
+
+.about-hero-content h1{
+	font-size: 60px;
+	color: #fff;
+	font-weight: 500;
+}
+
+.about-hero-content a{
+	text-decoration: none;
+	display: inline-block;
+	color: white;
+	font-size: 17px;
+	border: 2px solid #fff;
+	padding: 14px 7px;
+	border-radius: 50px;
+	margin-top: 20px;
+}
+
+.back-video{
+	position: absolute;
+	top: 50px;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9){
+	.back-video{
+		width: 100%;
+		height: auto;
+	}
+}
+
+@media (max-aspect-ratio: 16/9){
+	.back-video{
+		width: 100%;
+		height: auto;
+	}
+}
+
+.main-about-text{
+  flex: 1;
+  display: flex; /* Enable flexbox */
+  flex-direction: column; /* Arrange content vertically */
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  text-align: center; /* Center text */
+  /*margin: 20px; /* Adds space around the text */
+  margin-left: 150px; /* Adds space around the text */
+
+}
+
+.main-about-text h1{
+  font-size: 50px;
+  margin: 20px; /* Adds space around the text */
+  text-align: left;
+  color: white;
+
+}
+
+.main-about-text p{
+  line-height: 1.5;
+  margin: 20px;
+  text-align: left;
+
+}
+
+/*President Greeting*/
+/* Greeting Section Styles */
+.greeting-section {
+  display: flex;
+  flex-wrap: wrap; /* Ensures responsiveness */
+  width: 100%;
+  min-height: 100vh; /* Full viewport height */
+}
+
+/* President's Column */
+.greeting.president {
+  background-color: #000; /* Black background */
+  color: #fff; /* White text */
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  line-height: 2;
+
+}
+
+/* Vice-President's Column */
+.greeting.vice-president {
+  background-color: #ffcc33; /* Yellow background */
+  color: #000; /* Black text for contrast */
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  line-height: 2;
+}
+
+/* Image Styling */
+.greeting img {
+  max-width: 500px; /* Restrict image size */
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow for images */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .greeting-section {
+    flex-direction: column; /* Stacks columns vertically on small screens */
+  }
+
+  .greeting {
+    flex: unset; /* Each takes full width */
+    text-align: center;
+  }
+}
+
+/*
+.about-hero-text-container {
+  flex: 1;
+  background-color: #ffc107; /* Replace with your desired yellow color 
+  padding: 40px;
+  text-align: center;
+  color: #000;
+}
+
+.about-hero-text-container h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.about-hero-text-container p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.about-read-more-btn {
+  background-color: #e63946;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.about-read-more-btn a {
+    color: white;
+    text-decoration: none;
+}
+*/
+
+/*================FAQ PAGE================*/
+
+}
+
+body {
+  background-color: #000; /* Black background */
+  color: #fff; /* White text */
+  line-height: 1.6;
+}
+
+/* Header Section */
+.faq-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 60px;
+  background-color: #000;
+  color: #fff;
+}
+
+.header-left h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.header-right {
+  text-align: right;
+  max-width: 40%;
+}
+
+.header-right blockquote {
+  font-style: italic;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.header-right span {
+  font-size: 1rem;
+  display: block;
+  margin-top: 10px;
+  color: #ccc;
+}
+
+.read-more-btn {
+  background-color: #e63946;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.read-more-btn:hover {
+  background-color: #d62839;
+}
+
+/* FAQ Section */
+.faq-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 40px 60px;
+}
+
+.faq-box {
+  background-color: #111;
+  border: 2px solid #e63946;
+  border-radius: 10px;
+  padding: 20px;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.faq-box:hover {
+  transform: translateY(-10px);
+  background-color: #222;
+}
+
+.faq-box h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #e63946;
+}
+
+.faq-box p {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .faq-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header-right {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+
+  .faq-section {
+    padding: 20px;
+  }
+}
+
+/*================DOWNLOADS PAGE================*/
+
+/* Header Section */
+.downloads-header {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #e63946; /* Red background for header */
+  color: #fff;
+}
+
+.downloads-header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.downloads-header p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Downloads Section */
+.downloads-section {
+  padding: 40px 20px;
+}
+
+.downloads-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.download-item {
+  background-color: #111; /* Dark gray card background */
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.download-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+  border: 2px solid #ffc107; /* Yellow border on hover */
+}
+
+.download-item h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #ffc107; /* Yellow for titles */
+}
+
+.download-item p {
+  font-size: 1rem;
+  color: #ccc; /* Light gray for descriptions */
+  margin-bottom: 20px;
+}
+
+/* Download Buttons */
+.download-btn {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  display: inline-block;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.yellow-btn {
+  background-color: #ffc107; /* Yellow button */
+}
+
+.red-btn {
+  background-color: #e63946; /* Red button */
+}
+
+.download-btn:hover {
+  transform: translateY(-3px);
+  filter: brightness(1.2);
+}
+
+/*================NEWS & EVENTS===================*/
+/* Interactive Header */
+.news-events-header {
+  position: relative;
+  height: 50vh;
+  background: Black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.header-content h1 {
+  font-size: 3rem;
+  color: #e63946; /* Red theme color */
+}
+
+.header-content p {
+  font-size: 1.2rem;
+  margin: 10px 0 20px;
+  color: #fff;
+}
+
+.explore-btn {
+  background-color: #e63946; /* Red button */
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.explore-btn:hover {
+  background-color: #b52e38; /* Darker red */
+  transform: translateY(-3px);
+}
+
+/* Calendar Section */
+.calendar-section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.calendar-section h2 {
+  font-size: 2rem;
+  color: #e63946;
+  margin-bottom: 20px;
+}
+
+
+/*==========================GALLERY PAGE========================*/
+
+/* Header Styles */
+.gallery-header {
+  text-align: center;
+  padding: 20px;
+  background-color: #e63946; /* Red */
+  color: #fff;
+}
+
+.gallery-header h1 {
+  font-size: 2.5rem;
+}
+
+.gallery-header p {
+  font-size: 1rem;
+}
+
+/* Gallery Section */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 20px;
+}
+
+.gallery-item {
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+/* Modal Styles */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+  display: block;
+  margin: auto;
+  max-width: 80%;
+  max-height: 80%;
+  box-shadow: 0px 0px 10px 5px #e63946;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  color: #fff;
+  font-size: 35px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #e63946;
+}
+
+
+/*
+.calendar-container {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); /* 7 columns for the days of the week
+  gap: 10px;
+  background-color: #111; /* Dark gray 
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.calendar div {
+  padding: 10px;
+  border: 1px solid #444;
+  text-align: center;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.calendar .date {
+  position: relative;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.calendar .date:hover {
+  background-color: #e63946; /* Red on hover */
+}
+
+/*
+.calendar .date .event {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.9rem;
+  color: #ffc107; /* Yellow for event text 
+  display: none;
+}
+
+.calendar .date:hover .event {
+  display: block;
+} */
